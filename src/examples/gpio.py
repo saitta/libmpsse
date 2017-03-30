@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from mpsse import *
 from time import sleep
@@ -10,11 +10,11 @@ io = MPSSE(GPIO)
 for i in range(0, 10):
 
 	io.PinHigh(GPIOL0)
-	print "GPIOL0 State:", io.PinState(GPIOL0)
+	print("GPIOL0 State:", io.PinState(GPIOL0))
 	sleep(1)
 
 	io.PinLow(GPIOL0)
-	print "GPIOL0 State:", io.PinState(GPIOL0)
+	print("GPIOL0 State:", io.PinState(GPIOL0))
 	sleep(1)
 
 io.Close()
